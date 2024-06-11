@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jetsetgo</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+            <!-- Responsive navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-2">
+                    <img class="navbar-brand" src="..\assets\logo2.png">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!--nanti tambahin (href="index.html) di sebelah class, arahin ke html yg mau dilink-in-->
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      EN|ID
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">English</a></li>
+                                      <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+                            <li class="btn btn-outline-secondary border-0" href="#" role="button" aria-expanded="false">Bookings</li>
+                            <li class="nav-item dropdown">
+                                <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Meilisa</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="..\page\user.html">My Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                        <li><a class="dropdown-item" href="..\page\My Booking empty.html">My Bookings</a></li>
+                                        <li><a class="dropdown-item" href="..\page\PurchaseList.html">Purchases</a></li>
+                                        <a class="border-item pt-1"><button class="list-group-item list-group-item-action list-group-item-light p-3" data-bs-toggle="modal" data-bs-target="#myModa2" type="button">Log out</button></a>
+                                    </ul>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <section>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h2>Bank Transfer</h2>
+                                            <div class="text-muted fst-italic mb-2"> You can transfer from any banking channel (m-banking, SMS banking or ATM)</div>
+                                        <b> Select a Destination Account</b>
+                                        <div class="row" >
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <input type="radio" name="payment-method" id="payment-BCA" class="payment">
+                                                    <label for="payment-BCA"> BCA Transfer </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="../assets/th.png" alt="BCA Logo" class="logo-payment">
+                                                </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;">
+                                                <div class="col-5">
+                                                    <input type="radio" name="payment-method" id="payment-Mandiri" class="payment">
+                                                    <label for="payment-Mandiri"> Mandiri Transfer </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="../assets/mandiri.png" alt="Mandiri Logo" class="logo-payment">
+                                                </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <input type="radio" name="payment-method" id="payment-BCA" class="payment">
+                                                    <label for="payment-BRI"> BRI Transfer </label>
+                                                    </div>
+                                                <div class="col-5">
+                                                    <img src="../assets/bri.png" alt="BCA Logo" class="logo-payment">
+                                                </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <input type="radio" name="payment-method" id="payment-BNI" class="payment">
+                                                    <label for="payment-BCA"> BNI Transfer </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="../assets/bni.png" alt="BCA Logo" class="logo-payment">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="card-body price_detail" >    
+                                        <h5>Price Details</h5>
+                                        <div class="row">
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <label for="payment-BCA"> tiket1 </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <input class="input-price">
+                                                </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                    <div class="col-5">
+                                                        <label for="payment-BCA"> tiket1 </label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <input class="input-price">
+                                                    </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <label for="payment-BCA"> tiket1 </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <input class="input-price">
+                                                </div>
+                                            </div>
+                                            <div class="button d-flex align-items-center justify-content-between" style="border-top: 1; padding-bottom: 10px;" >
+                                                <div class="col-5">
+                                                    <label for="payment-BCA"> Total Price </label>
+                                                </div>
+                                                <div class="col-5">
+                                                    <input class="input-price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- booking detail-->
+                    <div class="col-lg-4">
+                        <!-- filter widget-->
+                        <div class="card mb-4">
+                            <div class="card-header booking-id"><b>BOOKING ID</b>
+                                <p>12345678910</p>
+                            </div>
+                            <div class="card-body">
+                                <p><b>Your Trip</b></p>
+                                <p>Flight</p>
+                                <p>Maret 04, 2024</p>
+                                <p>Tujuan Desnpasar Dari Jakarta</p>
+                            </div>
+                            <div class="card-body">
+                                <p><b>List of Passenger(s)</b></p>
+                                <p>Mrs. Meilisa Triana  (Adult)</p>
+                            </div> 
+                        </div>
+                        <button class="btn btn-warning btn-ab" data-bs-toggle="modal" data-bs-target="#myModal"  type="submit">Pay With Bank Transfer</button>
+                        <!-- The Modal Pay with Bank Transfer -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center">Please wait</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <b>We're processing your booking. This may take a few minutes</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div> 
+    <!-- Footer-->
+    <footer class="py-3 bg-dark">
+        <div class="text-center text-white">Copyright 2024</div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+</html>

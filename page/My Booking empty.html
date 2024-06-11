@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>My Booking Empty</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<!-- Top navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-2">
+        <img class="navbar-brand" src="..\assets\logo2.png">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          EN|ID
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                        </ul>
+                      </div>
+                </li>                
+                <li class="btn btn-outline-secondary border-0" href="#" role="button" aria-expanded="false">Bookings</li>
+                <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meilisa</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="..\page\user.html">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Notifications</a></li>
+                    <li><a class="dropdown-item" href="..\page\My Booking empty.html">My Bookings</a></li>
+                    <li><a class="dropdown-item" href="..\page\PurchaseList.html">Purchases</a></li>
+                    <a class="border-item pt-1"><button class="list-group-item list-group-item-action list-group-item-light p-3" data-bs-toggle="modal" data-bs-target="#myModa2" type="button">Log out</button></a>
+                </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+    <div class="list-group list-group-flush">
+        <div class="profil">
+            <div class="profil-info" >
+            <img src="..\assets\Profil.png">
+              <div class="profil-text">
+                <h2>Meilisa Triana</h2>
+                <p>Indonesia</p>
+                <p>meilisabkl2505@gmail.com</p>
+              </div>
+            </div>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Account</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Notifications</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Bookings</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Purchase List</a>
+                <a class="border-item pt-1"><button class="list-group-item list-group-item-action list-group-item-light p-3" data-bs-toggle="modal" data-bs-target="#myModa2" type="button">Log out</button></a>
+            <!-- The Modal Log out -->
+            <div class="modal" id="myModa2">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-sidebar">
+                            <h4 class="modal-title text-center"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3">
+                                    <label for="checkbox" class="form-"></label>
+                                    <p> Oh, no! You'll miss a lot of things by logging out. Are you sure want to log out?</p>
+                                <div class="d-grid gap-5">
+                                    <input class="btn btn-primary" type="submit" value="Log out">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+      </div>
+    </div>
+</div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- isi kontennya di sini-->
+        <div class="img-container">
+            <div class="card-header d-flex justify-content-between align-items-center"> </div>
+            <img src="..\assets\Pesawat.T.png" width="100" height="100">
+                            <p>No saved flight</p>
+        </div>
+   </div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="..js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jetsetgo</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-2">
+                <img class="navbar-brand" src="..\assets\logo2.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!--nanti tambahin (href="index.html) di sebelah class, arahin ke html yg mau dilink-in-->
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn btn-outline-secondary dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  EN|ID
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">English</a></li>
+                                  <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Bookings</a></li>
+                        <li class="nav-item pt-1"><button class="btn btn-outline-light btn-abc btn-sm me-2" type="button">Login</button></li>
+                        <li class="nav-item pt-1"><button class="btn btn-outline-secondary btn-abc btn-sm me-2" type="button">Register</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <div class="container">
+                                <h4>Passenger Details</h4>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInput1atname" class="form-label">First Name</label>
+                                        <input type="name" class="form-control" id="exampleInputname" aria-describedby="nameHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputFamilyName" class="form-label">Last Name</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="name2Help">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputFamilyName" class="form-label">Nationality</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="name2Help">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleGender" class="form-label">Gender</label><br>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="gender" id="maleGender" value="male">
+                                          <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="female">
+                                          <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputDOB" class="form-label">Date of Birth</label>
+                                        <input type="date" class="form-control" id="exampleInputDOB">
+                                      </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- filter widget-->
+                    <div class="card mb-4">
+                        <div class="card bg-light">
+                            <div class="flight-info">
+                                <div class="mb-3">
+                                    <label for="examplebags" class="form-label"></label><b>Bags</b><br>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="bags" id="free" value="free">
+                                      <label class="form-check-label" for="free">7kg (free)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="bags" id="addonbags" value="addon">
+                                        <label class="form-check-label" for="addonbags">15kg (+$7.66)</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="text">
+                                        <i><b>Notes :</b></i>
+                                        <i>Penting untuk diingat bahwa setiap maskapai penerbangan memiliki kebijakan ketat yang mengatur barang-barang tertentu yang diperbolehkan atau dilarang dibawa ke dalam kabin pesawat. Barang-barang seperti senjata tajam, bahan mudah terbakar, dan cairan berbahaya harus dimasukkan ke dalam bagasi yang diurus oleh maskapai.</i>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-ab">Save</button>
+                </div>
+            </div>
+        </div>
+    <!-- Footer-->
+    <footer class="py-3 bg-dark">
+        <div class="text-center text-white">Copyright 2024</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+</html>
