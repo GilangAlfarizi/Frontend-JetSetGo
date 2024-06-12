@@ -28,6 +28,7 @@ function loginUser(email, password) {
     .then((data) => {
       console.log("Login Successfull:", data);
       localStorage.setItem("token", data.token);
+      localStorage.setItem("userId", data.user_id);
       alert("Login successful!");
       window.location.href = "index.html";
     })
@@ -129,4 +130,3 @@ function searchFlight(from, to, depart) {
       console.error("There was a problem with the search operation:", error);
     });
 }
-
