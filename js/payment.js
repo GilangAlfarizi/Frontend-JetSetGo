@@ -129,6 +129,7 @@ function updatePayment(){
     .then((data) => {
       alert("Payment Successful")
       console.log(data)
+      window.location.href = "page/purchaselist.html";
     })
     .catch((error) => {
       console.error("There was a problem with the search operation:", error);
