@@ -99,3 +99,11 @@ function formatDate(isoDate) {
   const day = String(date.getDate()).padStart(2, '0');
   return `${day}-${month}-${year}`;
 }
+
+function handleContinue (e){
+  e.preventDefault()
+  window.location.href = "/page/payment.html";
+}
+
+const submitButton = document.getElementById("continue");
+submitButton.addEventListener("click", handleContinue);
