@@ -12,7 +12,7 @@ document
 function loginUser(email, password) {
   var data = { email: email, password: password };
 
-  fetch("http://localhost:3000/api/auth/login", {
+  fetch("https://backend-jetsetgo.vercel.app/api/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -53,7 +53,7 @@ document
 function registerUser(username, email, password) {
   var data = { username: username, email: email, password: password };
 
-  fetch("http://localhost:3000/api/auth/register", {
+  fetch("https://backend-jetsetgo.vercel.app/api/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -102,7 +102,7 @@ function searchFlight(from, to, depart) {
   };
 
   var endpoint =
-    "http://localhost:3000/api/flight/search?from=" +
+    "https://backend-jetsetgo.vercel.app/api/flight/search?from=" +
     encodeURIComponent(from) +
     "&to=" +
     encodeURIComponent(to) +

@@ -1,7 +1,7 @@
 function fetchUserData () {
     const userId = localStorage.getItem("userId");
     const token = localStorage.getItem("token");
-    const apiUrl = "http://localhost:3000/api/profile/" + userId;
+    const apiUrl = "https://backend-jetsetgo.vercel.app/api/profile/" + userId;
     const headers = {
         Authorization: "Bearer " + token,
         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function formatDateTime(dateTimeString) {
 function getDetailTicket(){
     const userId = localStorage.getItem("userId");
     const token = localStorage.getItem("token");
-    const apiUrl = "http://localhost:3000/api/ticket/detail/" + userId;
+    const apiUrl = "https://backend-jetsetgo.vercel.app/api/ticket/detail/" + userId;
     const headers = {
         Authorization: "Bearer " + token,
         "Content-Type": "application/json",

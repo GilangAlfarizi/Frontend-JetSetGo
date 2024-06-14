@@ -44,7 +44,7 @@ function fetchPassenger() {
       headers: headers,
   };
   
-  var endpoint = "http://localhost:3000/api/passenger/" + userId;
+  var endpoint = "https://backend-jetsetgo.vercel.app/api/passenger/" + userId;
 
   fetch(endpoint, config)
   .then((response) => {

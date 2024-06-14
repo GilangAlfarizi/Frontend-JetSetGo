@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     console.log(passengerData);
 
-    const endpoint = "http://localhost:3000/api/passenger/";
+    const endpoint = "https://backend-jetsetgo.vercel.app/api/passenger/";
     const token = localStorage.getItem("token");
     const headers = {
       Authorization: "Bearer " + token,

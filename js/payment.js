@@ -34,7 +34,7 @@ function getTicketDetail() {
     headers: headers,
   };
 
-  var endpoint = "http://localhost:3000/api/ticket/detail/" + userId;
+  var endpoint = "https://backend-jetsetgo.vercel.app/api/ticket/detail/" + userId;
   fetch(endpoint, config)
     .then((response) => {
       if (!response.ok) {
@@ -83,7 +83,7 @@ function getDetailPassenger() {
     headers: headers,
   };
 
-  var endpoint = "http://localhost:3000/api/passenger/" + userId;
+  var endpoint = "https://backend-jetsetgo.vercel.app/api/passenger/" + userId;
   fetch(endpoint, config)
     .then((response) => {
       if (!response.ok) {
@@ -123,7 +123,7 @@ getDetailPassenger();
 function updatePayment() {
   const userId = localStorage.getItem("userId");
   const token = localStorage.getItem("token");
-  const apiUrl = "http://localhost:3000/api/order/" + userId;
+  const apiUrl = "https://backend-jetsetgo.vercel.app/api/order/" + userId;
   const data = {
     status: "Paid",
     payment_method: "Gopay",
