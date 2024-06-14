@@ -1,126 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>jetsetgo</title>
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/index.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Responsive navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-2">
-                    <img class="navbar-brand" src="../jetset-go/assets/logo2.png">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <!--nanti tambahin (href="index.html) di sebelah class, arahin ke html yg mau dilink-in-->
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <a class="btn btn-outline-warning dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      EN|ID
-                                    </a>
-                                  
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">English</a></li>
-                                      <li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li>
-                                    </ul>
-                                  </div>
-                            </li>
-                            <li class="btn btn-outline-warning border-0" href="#" role="button" aria-expanded="false">Bookings</li>
-                            <li class="nav-item dropdown">
-                                <a class="btn btn-outline-warning dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Meilisa</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="..\page\user.html">My Account</a></li>
-                                    <li><a class="dropdown-item" href="#">Notifications</a></li>
-                                    <li><a class="dropdown-item" href="..\page\My Booking empty.html">My Bookings</a></li>
-                                    <li><a class="dropdown-item" href="..\page\PurchaseList.html">Purchases</a></li>
-                                    <a class="border-item pt-1"><button class="list-group-item list-group-item-action list-group-item-light p-3" data-bs-toggle="modal" data-bs-target="#myModa2" type="button">Log out</button></a>
-                                </ul>
-                             </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="bg-abc py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-5">Catch Your Dream Flight!</h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-end" style="padding-bottom: 30px;">
-                                    <div class="dropdown">
-                                        <select class="btn btn-outline-warning dropdown-toggle" >
-                                            <li><option class="dropdown-item" value="adults">Adults</option></li>
-                                            <li><option class="dropdown-item" value="child">Child</option></li>
-                                        </select>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="btn btn-warning dropdown-toggle" >
-                                            <li><option class="dropdown-item" value="economy">Economy</option></li>
-                                            <li><option class="dropdown-item" value="bussines">Bussines</option></li>
-                                            <li><option class="dropdown-item" value="first class">First Class</option></li>
-                                            <li><option class="dropdown-item" value="premium">Premium</option></li>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-xl-center" style="padding-bottom: 5px;">
-                                    <div class=" form-floating " style="width: 300px;">
-                                        <input type="text" class="form-control" id="from" placeholder="Enter From" name="from">
-                                        <label for="from">From</label>
-                                    </div>
-                                    <div class="form-floating" style="width: 300px;">
-                                        <input type="text" class="form-control" id="to" placeholder="Enter To" name="to">
-                                        <label for="to">To</label>
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-xl-center">
-                                    <div class=" form-floating " style="width: 300px;">
-                                        <input type="date" class="form-control" id="depart" placeholder="Enter depart" name="depart">
-                                        <label for="depart">Depart</label>
-                                    </div>
-                                    <div class="form-floating" style="width: 300px;">
-                                        <input type="date" class="form-control" id="return" placeholder="Enter return" name="return">
-                                        <label for="return">Return</label>
-                                    </div>
-                                </div>
-                                <form action="../page/search_clicked.html">
-                                    <div class="d-grid gap-2" style="padding-top: 50px;">
-                                        <input class="btn btn-primary" type="submit" value="Search">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="home_view/scripts.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>jetsetgo</title>
+		<!-- Bootstrap icons-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+			rel="stylesheet" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="../css/index.css" rel="stylesheet" />
+	</head>
+	<body class="d-flex flex-column h-100">
+		<main class="flex-shrink-0">
+			<!-- Responsive navbar-->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container px-2">
+					<img class="navbar-brand" src="../jetset-go/assets/logo2.png" />
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<!--nanti tambahin (href="index.html) di sebelah class, arahin ke html yg mau dilink-in-->
+							<li class="nav-item">
+								<div class="dropdown">
+									<a
+										class="btn btn-outline-warning dropdown-toggle border-0"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false">
+										EN|ID
+									</a>
+
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">English</a></li>
+										<li>
+											<a class="dropdown-item" href="#">Bahasa Indonesia</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li
+								class="btn btn-outline-warning border-0"
+								href="#"
+								role="button"
+								aria-expanded="false">
+								Bookings
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="btn btn-outline-warning dropdown-toggle border-0"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false">
+									Meilisa</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="..\page\user.html"
+											>My Account</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="dropdown-item"
+											href="..\page\My Booking empty.html"
+											>My Bookings</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="..\page\PurchaseList.html"
+											>Purchases</a
+										>
+									</li>
+									<a class="border-item pt-1"
+										><button
+											class="list-group-item list-group-item-action list-group-item-light p-3"
+											data-bs-toggle="modal"
+											data-bs-target="#myModa2"
+											type="button">
+											Log out
+										</button></a
+									>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Header-->
+			<header class="bg-abc py-5">
+				<div class="container px-5">
+					<div class="row gx-5 align-items-center justify-content-center">
+						<div class="col-lg-8 col-xl-7 col-xxl-6">
+							<div class="my-5 text-center text-xl-start">
+								<h1 class="display-5 fw-bolder text-white mb-5">
+									Catch Your Dream Flight!
+								</h1>
+								<div
+									class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-end"
+									style="padding-bottom: 30px">
+									<div class="dropdown">
+										<select class="btn btn-outline-warning dropdown-toggle">
+											<li>
+												<option class="dropdown-item" value="adults">
+													Adults
+												</option>
+											</li>
+											<li>
+												<option class="dropdown-item" value="child">
+													Child
+												</option>
+											</li>
+										</select>
+									</div>
+									<div class="dropdown">
+										<select class="btn btn-warning dropdown-toggle">
+											<li>
+												<option class="dropdown-item" value="economy">
+													Economy
+												</option>
+											</li>
+											<li>
+												<option class="dropdown-item" value="bussines">
+													Bussines
+												</option>
+											</li>
+											<li>
+												<option class="dropdown-item" value="first class">
+													First Class
+												</option>
+											</li>
+											<li>
+												<option class="dropdown-item" value="premium">
+													Premium
+												</option>
+											</li>
+										</select>
+									</div>
+								</div>
+								<div
+									class="d-grid gap-3 d-sm-flex justify-content-xl-center"
+									style="padding-bottom: 5px">
+									<div class="form-floating" style="width: 300px">
+										<input
+											type="text"
+											class="form-control"
+											id="from"
+											placeholder="Enter From"
+											name="from" />
+										<label for="from">From</label>
+									</div>
+									<div class="form-floating" style="width: 300px">
+										<input
+											type="text"
+											class="form-control"
+											id="to"
+											placeholder="Enter To"
+											name="to" />
+										<label for="to">To</label>
+									</div>
+								</div>
+								<div class="d-grid gap-3 d-sm-flex justify-content-xl-center">
+									<div class="form-floating" style="width: 300px">
+										<input
+											type="date"
+											class="form-control"
+											id="depart"
+											placeholder="Enter depart"
+											name="depart" />
+										<label for="depart">Depart</label>
+									</div>
+									<div class="form-floating" style="width: 300px">
+										<input
+											type="date"
+											class="form-control"
+											id="return"
+											placeholder="Enter return"
+											name="return" />
+										<label for="return">Return</label>
+									</div>
+								</div>
+								<form action="../page/search_clicked.html">
+									<div class="d-grid gap-2" style="padding-top: 50px">
+										<input
+											class="btn btn-primary"
+											type="submit"
+											value="Search" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</main>
+		<!-- Footer-->
+		<footer class="bg-dark py-4 mt-auto">
+			<div class="container px-5">
+				<div
+					class="row align-items-center justify-content-between flex-column flex-sm-row">
+					<div class="col-auto">
+						<div class="small m-0 text-white">
+							Copyright &copy; Your Website 2023
+						</div>
+					</div>
+					<div class="col-auto">
+						<a class="link-light small" href="#!">Privacy</a>
+						<span class="text-white mx-1">&middot;</span>
+						<a class="link-light small" href="#!">Terms</a>
+						<span class="text-white mx-1">&middot;</span>
+						<a class="link-light small" href="#!">Contact</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bootstrap core JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="home_view/scripts.js"></script>
+	</body>
 </html>
